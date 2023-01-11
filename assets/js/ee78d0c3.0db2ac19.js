@@ -1,0 +1,1 @@
+"use strict";(self.webpackChunkvortex_docs=self.webpackChunkvortex_docs||[]).push([[5406],{1431:s=>{s.exports=JSON.parse('{"label":"docusaurus","permalink":"/vortex-docs/blog/tags/docusaurus","allTagsPath":"/vortex-docs/blog/tags","count":4}')}}]);
