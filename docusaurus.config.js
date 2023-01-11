@@ -61,7 +61,7 @@ const config = {
       navbar: {
         title: 'Vortex-docs',
         logo: {
-          alt: 'My Site Logo',
+          alt: 'Vortex Logo',
           src: 'img/logo.svg',
         },
         items: [
@@ -69,11 +69,13 @@ const config = {
             type: 'doc',
             docId: 'intro',
             position: 'left',
-            label: 'Tutorial',
-          },
-          {to: '/blog', label: 'Blog', position: 'left'},
-          {
-            href: 'https://github.com/facebook/docusaurus',
+            label: 'Docs',
+          },{
+            to: '/blog', 
+            label: 'Blog', 
+            position: 'left'
+          },{
+            href: 'https://github.com/vortexntnu/vortex-docs',
             label: 'GitHub',
             position: 'right',
           },
