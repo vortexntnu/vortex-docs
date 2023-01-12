@@ -1,1 +1,0 @@
-"use strict";(self.webpackChunkvortex_docs=self.webpackChunkvortex_docs||[]).push([[7488],{9418:e=>{e.exports=JSON.parse('{"label":"hello","permalink":"/vortex-docs/blog/tags/hello","allTagsPath":"/vortex-docs/blog/tags","count":2}')}}]);
