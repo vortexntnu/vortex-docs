@@ -57,7 +57,7 @@ const config = {
 
   themeConfig:
     /** @type {import('@docusaurus/preset-classic').ThemeConfig} */
-    ({
+    {
       navbar: {
         title: 'Vortex-docs',
         logo: {
@@ -79,6 +79,10 @@ const config = {
             label: 'GitHub',
             position: 'right',
           },
+          {
+            type: 'search',
+            position: 'right'
+          }
         ],
       },
       footer: {
@@ -130,7 +134,12 @@ const config = {
         theme: lightCodeTheme,
         darkTheme: darkCodeTheme,
       },
-    }),
+      algolia: {
+        appId: '1N349H5FDW',
+        apiKey: '859177e3f9f6170a52651b85e2b3b21e',
+        indexName: 'vortex-docs',
+      }
+    },
 };
 
 module.exports = config;
