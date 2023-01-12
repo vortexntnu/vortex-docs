@@ -1,6 +1,5 @@
 {
     "label": "DevOps",
-    "position": 1,
     "link": {
       "type": "generated-index",
       "description": "Vortex - DevOps related documentation."

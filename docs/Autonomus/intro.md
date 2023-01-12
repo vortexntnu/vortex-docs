@@ -1,5 +1,5 @@
 ---
-sideposition: 1
+# sideposition: 1
 ---
 
 # Welcom to Autonomus
