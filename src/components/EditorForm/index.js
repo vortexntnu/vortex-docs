@@ -2,11 +2,11 @@ import React from 'react';
 import clsx from 'clsx';
 import styles from './styles.module.css';
 
-function EditorForm() {
+function EditorForm(props) {
   return (
-    <div class={styles.popup}>
-      <div class="hero shadow--md" style={{'border-radius': '1rem'}}>
-        <div class={styles.container} className="container">
+    <div class={styles.rootDiv} >
+      <div class="hero shadow--md" style={{'width': '100%', 'margin': '0'}}>
+        <div className="container">
         <h1 className="hero__title">Welcome to the Editor!</h1>
         <p className="hero__subtitle">Create a new Page here.</p>
 
@@ -23,10 +23,19 @@ function EditorForm() {
           <small>
             Hint: If you choose a file path that do not exists, a new catagory is created!
           </small>
+
+          <textarea id="textarea" style={{"display": "none"}} value="
+            ---
+            title: example
+            description: page description
+            ---
+
+            # Page title
+          "></textarea>
         </div>
       
         <div class="margin-top--lg">
-          <button class="button button--block button--primary button--lg shadow--lw">
+          <button class="button button--block button--primary button--lg shadow--lw" onClick={props.function}>
             Create New Page!
           </button>
         </div>
