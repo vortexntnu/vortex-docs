@@ -40,7 +40,7 @@ const config = {
           // Remove this to remove the "edit this page" links.
           editUrl:
             // 'https://github.com/facebook/docusaurus/tree/main/packages/create-docusaurus/templates/shared/',
-            'https://vortexntnu.github.io/vortex-docs/edit',
+            'https://vortexntnu.github.io/vortex-docs/edit?path=',
         },
         blog: {
           showReadingTime: true,
@@ -59,7 +59,7 @@ const config = {
 
   themeConfig:
     /** @type {import('@docusaurus/preset-classic').ThemeConfig} */
-    ({
+    {
       navbar: {
         title: 'Vortex-docs',
         logo: {
@@ -74,7 +74,11 @@ const config = {
             position: 'left',
             label: 'Docs',
           },{
-            to: '/edit', 
+            to: '/blog', 
+            label: 'Blog', 
+            position: 'left'
+          },{
+            to: '/editor', 
             label: 'Edit', 
             position: 'left'
           },{
@@ -82,6 +86,10 @@ const config = {
             label: 'GitHub',
             position: 'right',
           },
+          {
+            type: 'search',
+            position: 'right'
+          }
         ],
       },
       footer: {
@@ -133,7 +141,12 @@ const config = {
         theme: lightCodeTheme,
         darkTheme: darkCodeTheme,
       },
-    }),
+      algolia: {
+        appId: '1N349H5FDW',
+        apiKey: '859177e3f9f6170a52651b85e2b3b21e',
+        indexName: 'vortex-docs',
+      }
+    },
 };
 
 module.exports = config;
