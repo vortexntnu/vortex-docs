@@ -4,12 +4,14 @@ import BrowserOnly from '@docusaurus/BrowserOnly';
 import EditorForm from '@site/src/components/EditorForm';
 
 import styles from './index.module.css';
-import Stackedit from 'stackedit-js';
+// import Stackedit from 'stackedit-js';
 
 export default function Home() {
   return (
     <BrowserOnly>
       {() => {
+        const Stackedit = require('stackedit-js');
+
         let save;
         const stackedit = new Stackedit();
 
