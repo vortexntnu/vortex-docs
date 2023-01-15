@@ -7,7 +7,7 @@ import EditorForm from '@site/src/components/EditorForm';
 import styles from './index.module.css';
 import Stackedit from 'stackedit-js';
 
-const txt = document.getElementById('textarea');
+let save;
 const stackedit = new Stackedit();
 
 function openStackEdit() {
@@ -15,18 +15,19 @@ function openStackEdit() {
   stackedit.openFile({
     name: 'Filename', // with an optional filename
     content: {
-      text: txt.value // and the Markdown content.
+      text: `<!--\n\tFirst bracket is frontmatter and contain metadata about the file.\n\tThe page's content start at "Page title".\n-->\n\n---\n\ttitle: page name\n\tdescription: page description\n---\n\n# Page title\n`,
     }
   });
 }
 
-// Listen to StackEdit events and apply the changes to the textarea.
+// Listen to StackEdit events and apply the changes to the save variable, basiclly auto save.
 stackedit.on('fileChange', (file) => {
-  txt.value = file.content.text;
+  save = file.content.text;
 });
 
-stackedit.on('close', (file) => {
-  alert(file.content.text);
+// When the editor is closed
+stackedit.on('close', () => {
+  console.log(save);
 });
 
 export default function Home() {
