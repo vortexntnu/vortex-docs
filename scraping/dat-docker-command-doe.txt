@@ -1,1 +1,4 @@
 docker run --env-file=./scraping/.env -e "CONFIG=$(cat ./scraping/config.json | jq -r tostring)" algolia/docsearch-scraper
+
+Run this command in the vortex-docs folderto update the search results of the search engine
+(Doing this automatically should be possible)
