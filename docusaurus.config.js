@@ -40,7 +40,7 @@ const config = {
           // Remove this to remove the "edit this page" links.
           editUrl:
             // 'https://github.com/facebook/docusaurus/tree/main/packages/create-docusaurus/templates/shared/',
-            'https://vortexntnu.github.io/vortex-docs/edit?path=',
+            'https://vortexntnu.github.io/vortex-docs/editor?path=',
         },
         blog: {
           showReadingTime: true,
