@@ -1,0 +1,74 @@
+.rootDiv {
+  width: 800px;
+}
+
+@media screen and (max-width: 800px) {
+  .rootDiv {
+    width: 100%;
+  }
+}
+
+.line {
+  height: 1px;
+  width: calc(100% - 2.5rem);
+  background: rgba(255,255,255,.2);
+  margin: 2rem 1rem;
+
+}
+
+/* 
+  stuff ripped from bootstrap
+*/
+.formControl {
+  display: block;
+  width: 100%;
+  height: calc(1.5em + 0.75rem + 2px);
+  padding: 0.375rem 0.75rem;
+  font-size: 1rem;
+  font-weight: 400;
+  line-height: 1.5;
+  /* color: #495057; */
+  /* background-color: #fff; */
+  background-clip: padding-box;
+  border: none;
+  /* border: 1px solid rgba(0,0,0,.2); */
+  border-radius: 0.3rem;
+  transition: border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .formControl {
+    transition: none;
+  }
+}
+
+.formControl::-ms-expand {
+  background-color: transparent;
+  border: 0;
+}
+
+.formControl:focus {
+  /* color: #495057; */
+  /* background-color: #fff; */
+  border-color: #80bdff;
+  outline: 0;
+  box-shadow: 0 0 0 0.2rem rgba(0, 123, 255, 0.25);
+}
+
+.formControl:disabled, .formControl[readonly] {
+  background-color: #e9ecef;
+  opacity: 1;
+}
+
+.formLabel {
+  padding-top: calc(0.375rem + 1px);
+  padding-bottom: calc(0.375rem + 1px);
+  margin-bottom: 0;
+  font-size: inherit;
+  line-height: 1.5;
+}
+
+.formText {
+  display: block;
+  margin-top: 0.25rem;
+}
