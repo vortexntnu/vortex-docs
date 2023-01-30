@@ -7,7 +7,7 @@ const darkCodeTheme = require('prism-react-renderer/themes/dracula');
 /** @type {import('@docusaurus/types').Config} */
 const config = {
   title: 'Vortex docs',
-  tagline: 'Dinosaurs are cool',
+  tagline: "It's documentin' time🧛",
   url: 'https://vortexntnu.github.io',
   baseUrl: '/vortex-docs/',
   onBrokenLinks: 'throw',
@@ -70,7 +70,7 @@ const config = {
         items: [
           {
             type: 'doc',
-            docId: 'intro',
+            docId: 'docs-frontpage',
             position: 'left',
             label: 'Docs',
           },{
@@ -100,7 +100,7 @@ const config = {
             items: [
               {
                 label: 'Tutorial',
-                to: '/docs/intro',
+                to: '/docs/docs-frontpage',
               },
             ],
           },
