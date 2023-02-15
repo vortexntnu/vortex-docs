@@ -23,8 +23,8 @@ $ alias
 ```
 
 beluga ip addresses
-- rasberrypi = 
-- xavior = 
+- rasberrypi = 129.241.187.99
+- xavior = 129.241.187.100
 
 The alias "rpi" connects you to the rasberrypi and alias "xavier" connects you to the xavier, both on beluga.
 
