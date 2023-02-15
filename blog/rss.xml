@@ -4,7 +4,7 @@
         <title>Vortex docs Blog</title>
         <link>https://vortexntnu.github.io/vortex-docs/blog</link>
         <description>Vortex docs Blog</description>
-        <lastBuildDate>Wed, 15 Feb 2023 18:28:26 GMT</lastBuildDate>
+        <lastBuildDate>Wed, 15 Feb 2023 18:29:38 GMT</lastBuildDate>
         <docs>https://validator.w3.org/feed/docs/rss2.html</docs>
         <generator>https://github.com/jpmonette/feed</generator>
         <language>en</language>
@@ -12,7 +12,7 @@
             <title><![CDATA[This is the blog yay]]></title>
             <link>https://vortexntnu.github.io/vortex-docs/blog/blog</link>
             <guid>/blog</guid>
-            <pubDate>Wed, 15 Feb 2023 18:28:26 GMT</pubDate>
+            <pubDate>Wed, 15 Feb 2023 18:29:38 GMT</pubDate>
         </item>
         <item>
             <title><![CDATA[Welcome]]></title>
